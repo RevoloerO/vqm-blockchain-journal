@@ -1,0 +1,214 @@
+{
+    "contracts": {
+        "c:/Users/quyen/OneDrive/Documents/GitHub/vqm-blockchain-journal/Solidity Project/Beginner/HelloWorld/HelloWorld.sol": {
+            "HelloWorld": {
+                "abi": [
+                    {
+                        "inputs": [],
+                        "name": "print",
+                        "outputs": [
+                            {
+                                "internalType": "string",
+                                "name": "",
+                                "type": "string"
+                            }
+                        ],
+                        "stateMutability": "pure",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "custom:dev-run-script": "scripts/deploy_with_ethers.ts",
+                    "details": "implement contract to print \"Hello World\"",
+                    "kind": "dev",
+                    "methods": {},
+                    "title": "HelloWorld",
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "linkReferences": {},
+                        "object": "6080806040523460145760f690816100198239f35b5f80fdfe60806004361015600d575f80fd5b5f3560e01c6313bdfacd14601f575f80fd5b3460bc575f36600319011260bc576060810181811067ffffffffffffffff82111760a85760405260218152604060208201917f48656c6c6f20426c6f636b436861696e20576f726c642c2056514d20686572658352602160f81b828201528151928391602083525180918160208501528484015e5f828201840152601f01601f19168101030190f35b634e487b7160e01b5f52604160045260245ffd5b5f80fdfea26469706673582212208c548984e2d98450058568558d626f5ea5ab9a0177fb9900e47733337051b66364736f6c634300081c0033",
+                        "opcodes": "PUSH1 0x80 DUP1 PUSH1 0x40 MSTORE CALLVALUE PUSH1 0x14 JUMPI PUSH1 0xF6 SWAP1 DUP2 PUSH2 0x19 DUP3 CODECOPY RETURN JUMPDEST PUSH0 DUP1 REVERT INVALID PUSH1 0x80 PUSH1 0x4 CALLDATASIZE LT ISZERO PUSH1 0xD JUMPI PUSH0 DUP1 REVERT JUMPDEST PUSH0 CALLDATALOAD PUSH1 0xE0 SHR PUSH4 0x13BDFACD EQ PUSH1 0x1F JUMPI PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH1 0xBC JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH1 0xBC JUMPI PUSH1 0x60 DUP2 ADD DUP2 DUP2 LT PUSH8 0xFFFFFFFFFFFFFFFF DUP3 GT OR PUSH1 0xA8 JUMPI PUSH1 0x40 MSTORE PUSH1 0x21 DUP2 MSTORE PUSH1 0x40 PUSH1 0x20 DUP3 ADD SWAP2 PUSH32 0x48656C6C6F20426C6F636B436861696E20576F726C642C2056514D2068657265 DUP4 MSTORE PUSH1 0x21 PUSH1 0xF8 SHL DUP3 DUP3 ADD MSTORE DUP2 MLOAD SWAP3 DUP4 SWAP2 PUSH1 0x20 DUP4 MSTORE MLOAD DUP1 SWAP2 DUP2 PUSH1 0x20 DUP6 ADD MSTORE DUP5 DUP5 ADD MCOPY PUSH0 DUP3 DUP3 ADD DUP5 ADD MSTORE PUSH1 0x1F ADD PUSH1 0x1F NOT AND DUP2 ADD SUB ADD SWAP1 RETURN JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x41 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP13 SLOAD DUP10 DUP5 0xE2 0xD9 DUP5 POP SDIV DUP6 PUSH9 0x558D626F5EA5AB9A01 PUSH24 0xFB9900E47733337051B66364736F6C634300081C00330000 ",
+                        "sourceMap": "215:143:0:-:0;;;;;;;;;;;;;;;;;"
+                    },
+                    "deployedBytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "immutableReferences": {},
+                        "linkReferences": {},
+                        "object": "60806004361015600d575f80fd5b5f3560e01c6313bdfacd14601f575f80fd5b3460bc575f36600319011260bc576060810181811067ffffffffffffffff82111760a85760405260218152604060208201917f48656c6c6f20426c6f636b436861696e20576f726c642c2056514d20686572658352602160f81b828201528151928391602083525180918160208501528484015e5f828201840152601f01601f19168101030190f35b634e487b7160e01b5f52604160045260245ffd5b5f80fdfea26469706673582212208c548984e2d98450058568558d626f5ea5ab9a0177fb9900e47733337051b66364736f6c634300081c0033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x4 CALLDATASIZE LT ISZERO PUSH1 0xD JUMPI PUSH0 DUP1 REVERT JUMPDEST PUSH0 CALLDATALOAD PUSH1 0xE0 SHR PUSH4 0x13BDFACD EQ PUSH1 0x1F JUMPI PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH1 0xBC JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH1 0xBC JUMPI PUSH1 0x60 DUP2 ADD DUP2 DUP2 LT PUSH8 0xFFFFFFFFFFFFFFFF DUP3 GT OR PUSH1 0xA8 JUMPI PUSH1 0x40 MSTORE PUSH1 0x21 DUP2 MSTORE PUSH1 0x40 PUSH1 0x20 DUP3 ADD SWAP2 PUSH32 0x48656C6C6F20426C6F636B436861696E20576F726C642C2056514D2068657265 DUP4 MSTORE PUSH1 0x21 PUSH1 0xF8 SHL DUP3 DUP3 ADD MSTORE DUP2 MLOAD SWAP3 DUP4 SWAP2 PUSH1 0x20 DUP4 MSTORE MLOAD DUP1 SWAP2 DUP2 PUSH1 0x20 DUP6 ADD MSTORE DUP5 DUP5 ADD MCOPY PUSH0 DUP3 DUP3 ADD DUP5 ADD MSTORE PUSH1 0x1F ADD PUSH1 0x1F NOT AND DUP2 ADD SUB ADD SWAP1 RETURN JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x41 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP13 SLOAD DUP10 DUP5 0xE2 0xD9 DUP5 POP SDIV DUP6 PUSH9 0x558D626F5EA5AB9A01 PUSH24 0xFB9900E47733337051B66364736F6C634300081C00330000 ",
+                        "sourceMap": "215:143:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;215:143:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;215:143:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;215:143:0;;;;;;;;;;;;;;;;;;;;;;"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "49200",
+                            "executionCost": "105",
+                            "totalCost": "49305"
+                        },
+                        "external": {
+                            "print()": "358"
+                        }
+                    },
+                    "methodIdentifiers": {
+                        "print()": "13bdfacd"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.8.28+commit.7893614a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"print\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"custom:dev-run-script\":\"scripts/deploy_with_ethers.ts\",\"details\":\"implement contract to print \\\"Hello World\\\"\",\"kind\":\"dev\",\"methods\":{},\"title\":\"HelloWorld\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/quyen/OneDrive/Documents/GitHub/vqm-blockchain-journal/Solidity Project/Beginner/HelloWorld/HelloWorld.sol\":\"HelloWorld\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"c:/Users/quyen/OneDrive/Documents/GitHub/vqm-blockchain-journal/Solidity Project/Beginner/HelloWorld/HelloWorld.sol\":{\"keccak256\":\"0x3db97d2e8f5e8ee5359751122d96a0a5f832d977923d4bfc1b6f47071ec0d1d0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e3394227b7542a690a54318b34ca5958bdb321ebb344b2956c32da203d522032\",\"dweb:/ipfs/QmQYKY4TGYUtCzDEHGuuxrydHX3HC9Hzun4ViSJkquaueb\"]}},\"version\":1}",
+                "storageLayout": {
+                    "storage": [],
+                    "types": null
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "sources": {
+        "c:/Users/quyen/OneDrive/Documents/GitHub/vqm-blockchain-journal/Solidity Project/Beginner/HelloWorld/HelloWorld.sol": {
+            "ast": {
+                "absolutePath": "c:/Users/quyen/OneDrive/Documents/GitHub/vqm-blockchain-journal/Solidity Project/Beginner/HelloWorld/HelloWorld.sol",
+                "exportedSymbols": {
+                    "HelloWorld": [
+                        11
+                    ]
+                },
+                "id": 12,
+                "license": "MIT",
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.8",
+                            ".26"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "33:24:0"
+                    },
+                    {
+                        "abstract": false,
+                        "baseContracts": [],
+                        "canonicalName": "HelloWorld",
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "documentation": {
+                            "id": 2,
+                            "nodeType": "StructuredDocumentation",
+                            "src": "61:150:0",
+                            "text": " @title HelloWorld\n @dev implement contract to print \"Hello World\"\n @custom:dev-run-script scripts/deploy_with_ethers.ts"
+                        },
+                        "fullyImplemented": true,
+                        "id": 11,
+                        "linearizedBaseContracts": [
+                            11
+                        ],
+                        "name": "HelloWorld",
+                        "nameLocation": "224:10:0",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "body": {
+                                    "id": 9,
+                                    "nodeType": "Block",
+                                    "src": "294:61:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "hexValue": "48656c6c6f20426c6f636b436861696e20576f726c642c2056514d206865726521",
+                                                "id": 7,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "312:35:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_276c6eb1c78706848908a3409d518fa339bf9453b8aabde509d778ff4546cc19",
+                                                    "typeString": "literal_string \"Hello BlockChain World, VQM here!\""
+                                                },
+                                                "value": "Hello BlockChain World, VQM here!"
+                                            },
+                                            "functionReturnParameters": 6,
+                                            "id": 8,
+                                            "nodeType": "Return",
+                                            "src": "305:42:0"
+                                        }
+                                    ]
+                                },
+                                "functionSelector": "13bdfacd",
+                                "id": 10,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "print",
+                                "nameLocation": "251:5:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 3,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "256:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 6,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 5,
+                                            "mutability": "mutable",
+                                            "name": "",
+                                            "nameLocation": "-1:-1:-1",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 10,
+                                            "src": "280:13:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "memory",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string"
+                                            },
+                                            "typeName": {
+                                                "id": 4,
+                                                "name": "string",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "280:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_storage_ptr",
+                                                    "typeString": "string"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "279:15:0"
+                                },
+                                "scope": 11,
+                                "src": "242:113:0",
+                                "stateMutability": "pure",
+                                "virtual": false,
+                                "visibility": "public"
+                            }
+                        ],
+                        "scope": 12,
+                        "src": "215:143:0",
+                        "usedErrors": [],
+                        "usedEvents": []
+                    }
+                ],
+                "src": "33:325:0"
+            },
+            "id": 0
+        }
+    }
+}
