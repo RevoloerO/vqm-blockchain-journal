@@ -13,3 +13,10 @@ It is quite confusing when I used Remix to create 1st Solidity project, to test 
 It is much more simple after I understand how value is sent and retrieved via blockchain
 Beside, Remix VM, I also used solidity extension on Visual Studio Code to test and check value.
 ---
+3.StringMessage.col
+I learn that when I put comma in the input for the string, it will count as 2 string which 
+cause error for mismatch length
+(StringMessage.sendMessage errored: Error encoding arguments: Error: types/values length mismatch)
+wrong input: Hello, World! => comma make it into ["Hello","World!"]
+correct input: "Hello, World!" -> put it into a string will make the whole message as 1 string
+---

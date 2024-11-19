@@ -1,0 +1,320 @@
+{
+    "contractName": "StringMessage",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "getMessage",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "message",
+                    "type": "string"
+                }
+            ],
+            "name": "sendMessage",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.28+commit.7893614a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getMessage\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"message\",\"type\":\"string\"}],\"name\":\"sendMessage\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"custom:dev-run-script\":\"scripts/deploy_with_ethers.ts\",\"details\":\"implement contract to set a string with value from user. User can check value anytime without cosumming any gas. The string will not be accessible by any other contracts \",\"kind\":\"dev\",\"methods\":{},\"title\":\"StringMessage\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/quyen/OneDrive/Documents/GitHub/vqm-blockchain-journal/Solidity Project/Beginner/StringMessage.sol\":\"StringMessage\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"c:/Users/quyen/OneDrive/Documents/GitHub/vqm-blockchain-journal/Solidity Project/Beginner/StringMessage.sol\":{\"keccak256\":\"0x52e7fdf9e7f1ab9345a2ecc9b2d6aac3b5d80ae70219db559407415fae73a99c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://037543b9ec338b2f80fdd4106b174afb651f43e361ff952ad7fb6c2e59552548\",\"dweb:/ipfs/QmViruRXyAuatx2wnMk3RHUDYbMMdFDE96ULnKK5MjaJFL\"]}},\"version\":1}",
+    "bytecode": "60808060405234601557610379908161001a8239f35b5f80fdfe6080806040526004361015610012575f80fd5b5f3560e01c908163469c811014610112575063ce6d41de14610032575f80fd5b3461010e575f36600319011261010e576040515f905f5491610053836102eb565b8083526020830193600181169081156100f357506001146100aa575b509061007f8160409303826102c9565b8151928391602083525180918160208501528484015e5f828201840152601f01601f19168101030190f35b5f8080525f5160206103245f395f51905f52939250905b8082106100d95750909150810160200161007f61006f565b9192600181602092548385880101520191019092916100c1565b60ff1916855250151560051b8201602001905061007f61006f565b5f80fd5b3461010e57602036600319011261010e5760043567ffffffffffffffff811161010e573660238201121561010e5780600401359067ffffffffffffffff82116102b557610169601f8301601f1916602001846102c9565b818352366024838301011161010e57815f926024602093018386013783010152805167ffffffffffffffff81116102b5576101a45f546102eb565b601f811161024e575b50602091601f82116001146101e8579181925f926101dd575b50505f19600383901b1c191660019190911b175f55005b0151905082806101c6565b601f198216925f80525f5160206103245f395f51905f52915f5b8581106102365750836001951061021e575b505050811b015f55005b01515f1960f88460031b161c19169055828080610214565b91926020600181928685015181550194019201610202565b5f8052601f820160051c5f5160206103245f395f51905f520190602083106102a0575b601f0160051c5f5160206103245f395f51905f5201905b81811061029557506101ad565b5f8155600101610288565b5f5160206103245f395f51905f529150610271565b634e487b7160e01b5f52604160045260245ffd5b90601f8019910116810190811067ffffffffffffffff8211176102b557604052565b90600182811c92168015610319575b602083101461030557565b634e487b7160e01b5f52602260045260245ffd5b91607f16916102fa56fe290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563a2646970667358221220a45f76976fc15f444d5582b11992e14f2786e15f2adb6072c53a5793f505ba4864736f6c634300081c0033",
+    "deployedBytecode": "6080806040526004361015610012575f80fd5b5f3560e01c908163469c811014610112575063ce6d41de14610032575f80fd5b3461010e575f36600319011261010e576040515f905f5491610053836102eb565b8083526020830193600181169081156100f357506001146100aa575b509061007f8160409303826102c9565b8151928391602083525180918160208501528484015e5f828201840152601f01601f19168101030190f35b5f8080525f5160206103245f395f51905f52939250905b8082106100d95750909150810160200161007f61006f565b9192600181602092548385880101520191019092916100c1565b60ff1916855250151560051b8201602001905061007f61006f565b5f80fd5b3461010e57602036600319011261010e5760043567ffffffffffffffff811161010e573660238201121561010e5780600401359067ffffffffffffffff82116102b557610169601f8301601f1916602001846102c9565b818352366024838301011161010e57815f926024602093018386013783010152805167ffffffffffffffff81116102b5576101a45f546102eb565b601f811161024e575b50602091601f82116001146101e8579181925f926101dd575b50505f19600383901b1c191660019190911b175f55005b0151905082806101c6565b601f198216925f80525f5160206103245f395f51905f52915f5b8581106102365750836001951061021e575b505050811b015f55005b01515f1960f88460031b161c19169055828080610214565b91926020600181928685015181550194019201610202565b5f8052601f820160051c5f5160206103245f395f51905f520190602083106102a0575b601f0160051c5f5160206103245f395f51905f5201905b81811061029557506101ad565b5f8155600101610288565b5f5160206103245f395f51905f529150610271565b634e487b7160e01b5f52604160045260245ffd5b90601f8019910116810190811067ffffffffffffffff8211176102b557604052565b90600182811c92168015610319575b602083101461030557565b634e487b7160e01b5f52602260045260245ffd5b91607f16916102fa56fe290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563a2646970667358221220a45f76976fc15f444d5582b11992e14f2786e15f2adb6072c53a5793f505ba4864736f6c634300081c0033",
+    "sourceMap": "354:317:0:-:0;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "354:317:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;354:317:0;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;354:317:0;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;354:317:0;;-1:-1:-1;354:317:0;;;;;;;-1:-1:-1;354:317:0;;-1:-1:-1;354:317:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;354:317:0;;;-1:-1:-1;354:317:0;;;;;;;;;-1:-1:-1;354:317:0;;;;;;;;;;;;;-1:-1:-1;;354:317:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;354:317:0;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;354:317:0;;;;;;;;;;;;;;;;;;;;-1:-1:-1;354:317:0;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;354:317:0;;;;;;;;;;;;;;;;-1:-1:-1;;;354:317:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;354:317:0;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;354:317:0;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;354:317:0;-1:-1:-1;354:317:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;",
+    "sourcePath": "c:/Users/quyen/OneDrive/Documents/GitHub/vqm-blockchain-journal/Solidity Project/Beginner/StringMessage.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.28+commit.7893614a"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/quyen/OneDrive/Documents/GitHub/vqm-blockchain-journal/Solidity Project/Beginner/StringMessage.sol",
+        "exportedSymbols": {
+            "StringMessage": [
+                23
+            ]
+        },
+        "id": 24,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".26"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:24:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "StringMessage",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "documentation": {
+                    "id": 2,
+                    "nodeType": "StructuredDocumentation",
+                    "src": "61:289:0",
+                    "text": " @title StringMessage\n @dev implement contract to set a string with value from user. User can check value anytime without\n cosumming any gas. The string will not be accessible by any other contracts \n @custom:dev-run-script scripts/deploy_with_ethers.ts"
+                },
+                "fullyImplemented": true,
+                "id": 23,
+                "linearizedBaseContracts": [
+                    23
+                ],
+                "name": "StringMessage",
+                "nameLocation": "363:13:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 4,
+                        "mutability": "mutable",
+                        "name": "_message",
+                        "nameLocation": "401:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 23,
+                        "src": "386:23:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_storage",
+                            "typeString": "string"
+                        },
+                        "typeName": {
+                            "id": 3,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "386:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string"
+                            }
+                        },
+                        "visibility": "private"
+                    },
+                    {
+                        "body": {
+                            "id": 13,
+                            "nodeType": "Block",
+                            "src": "502:37:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 11,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 9,
+                                            "name": "_message",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 4,
+                                            "src": "513:8:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 10,
+                                            "name": "message",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 6,
+                                            "src": "524:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "src": "513:18:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 12,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "513:18:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "469c8110",
+                        "id": 14,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "sendMessage",
+                        "nameLocation": "461:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 7,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 6,
+                                    "mutability": "mutable",
+                                    "name": "message",
+                                    "nameLocation": "487:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 14,
+                                    "src": "473:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 5,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "473:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "472:23:0"
+                        },
+                        "returnParameters": {
+                            "id": 8,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "502:0:0"
+                        },
+                        "scope": 23,
+                        "src": "452:87:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 21,
+                            "nodeType": "Block",
+                            "src": "634:34:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 19,
+                                        "name": "_message",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 4,
+                                        "src": "652:8:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 18,
+                                    "id": 20,
+                                    "nodeType": "Return",
+                                    "src": "645:15:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "ce6d41de",
+                        "id": 22,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getMessage",
+                        "nameLocation": "586:10:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 15,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "596:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 18,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 17,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 22,
+                                    "src": "620:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 16,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "620:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "619:15:0"
+                        },
+                        "scope": 23,
+                        "src": "577:91:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 24,
+                "src": "354:317:0",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "33:638:0"
+    },
+    "functionHashes": {
+        "getMessage()": "ce6d41de",
+        "sendMessage(string)": "469c8110"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "177800",
+            "executionCost": "227",
+            "totalCost": "178027"
+        },
+        "external": {
+            "getMessage()": "infinite",
+            "sendMessage(string)": "infinite"
+        }
+    }
+}
