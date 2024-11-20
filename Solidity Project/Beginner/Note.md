@@ -21,5 +21,12 @@ wrong input: Hello, World! => comma make it into ["Hello","World!"]
 correct input: "Hello, World!" -> put it into a string will make the whole message as 1 string
 ---
 4.AddressInfo.sol
-when testing with RemixVM, I recognize there is an address checksum to determine whether the address input is valid which is interesting since we could not just random input some fake address. Even if the blockchain world is random hash, there is some way to determine a valid random or just fake random one.
+when testing with RemixVM, I recognize there is an address checksum to determine whether 
+the address input is valid which is interesting since we could not just random input 
+some fake address. Even if the blockchain world is random hash, there is some way to 
+determine a valid random or just fake random one.
+--
+5. BasicOperator.sol
+To define a function which should not consume any gas and return the response immediatly, 
+we should use view or pure function.
 --
