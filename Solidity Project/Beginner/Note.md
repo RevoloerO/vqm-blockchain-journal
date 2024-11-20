@@ -30,3 +30,7 @@ determine a valid random or just fake random one.
 To define a function which should not consume any gas and return the response immediatly, 
 we should use view or pure function.
 --
+6.PrimeCheck.sol
+The interesting thing I learnt is Solidity does not support float or double data type which
+means I could not use the range from 2 -> sqrt(n) to check for prime number. Thus, I create
+for loop from 2 to n/2. Basically, the contract in blockchain work around integer numbers.
