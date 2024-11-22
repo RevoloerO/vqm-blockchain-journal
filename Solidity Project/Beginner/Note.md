@@ -38,3 +38,7 @@ for loop from 2 to n/2. Basically, the contract in blockchain work around intege
 7.PrimeList.sol
 Next level from PrimeCheck where I work around function private, public. The recall function help me to understand how the list is handled in Solidity. I need to match the data type 
 uint[] correctly to ensure the output 
+--
+8.EvenOdd.sol
+A quick practice for me to play around getting input and returns output using "pure" in Solidity
+--
