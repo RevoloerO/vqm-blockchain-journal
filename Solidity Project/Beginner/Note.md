@@ -34,3 +34,7 @@ we should use view or pure function.
 The interesting thing I learnt is Solidity does not support float or double data type which
 means I could not use the range from 2 -> sqrt(n) to check for prime number. Thus, I create
 for loop from 2 to n/2. Basically, the contract in blockchain work around integer numbers.
+--
+7.PrimeList.sol
+Next level from PrimeCheck where I work around function private, public. The recall function help me to understand how the list is handled in Solidity. I need to match the data type 
+uint[] correctly to ensure the output 
