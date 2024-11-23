@@ -1,6 +1,7 @@
 ---
 title: my blockchain journal
 author: vqm
+section: Solidity Project/ Beginner
 ---
 1.HelloWorld.sol
 It is quite confusing when I used Remix to create 1st Solidity project, to test the file, I need to:
