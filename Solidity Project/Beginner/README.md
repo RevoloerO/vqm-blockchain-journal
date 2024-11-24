@@ -43,3 +43,5 @@ uint[] correctly to ensure the output
 8.EvenOdd.sol
 A quick practice for me to play around getting input and returns output using "pure" in Solidity
 --
+9.WhiteList.sol
+I could not test the msg.sender address with RemixVM yet. To confirm the contract work, I will try to find a way to test.
