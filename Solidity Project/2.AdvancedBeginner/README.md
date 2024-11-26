@@ -16,3 +16,9 @@ data structure in the blockchain.)
 2.Calculator2.sol
 There is some type of error handler that I need to learn for each type of contract.
 Using require(condition,"message") is quite simple to understand and apply.
+--
+3.GradeSystem.sol
+when I use enum to declare Grade() there is a miunderstanding of the concept of enum which I need to 
+know about return are suppose to be stage number starting
+from 0,1,2,3...
+-- 
