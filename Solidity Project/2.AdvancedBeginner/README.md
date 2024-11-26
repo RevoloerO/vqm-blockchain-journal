@@ -12,13 +12,24 @@ functionality. Applications can subscribe and listen to these events through the
 interface of an Ethereum client.Events are inheritable members of contracts. When you 
 call them, they cause the arguments to be stored in the transaction’s log - a special 
 data structure in the blockchain.)
---
+---
 2.Calculator2.sol
 There is some type of error handler that I need to learn for each type of contract.
 Using require(condition,"message") is quite simple to understand and apply.
---
+---
 3.GradeSystem.sol
 when I use enum to declare Grade() there is a miunderstanding of the concept of enum which I need to 
 know about return are suppose to be stage number starting
 from 0,1,2,3...
--- 
+---
+4.Rent.sol
+It is interesting when I used RemixVM that I put lessee 
+data before clicking transact which normally a deploy 
+button. I can retrieve info from published contract and
+check for who, with whom, what address.
+---
+5.TransactionState.sol
+Another practice with enums and constructors which help me
+to understand more about how state working. Another reminder
+that I need to be careful about putting "view" into function
+---
