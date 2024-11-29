@@ -33,3 +33,6 @@ Another practice with enums and constructors which help me
 to understand more about how state working. Another reminder
 that I need to be careful about putting "view" into function
 ---
+6.CountingList.sol
+A quick practice using mapping and struct to create a user list with count variable to handle id input.
+---
