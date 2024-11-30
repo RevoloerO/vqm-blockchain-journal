@@ -42,3 +42,7 @@ There is a different in the number list between array and mapping when array sto
 Array: input(0) -> id[1]
 Mapping: input(1) -> id[1]
 ---
+8.PurchaseTransaction.sol
+The setting for testing need to be more clarify in RemixVM
+Be careful when working with msg.sender and msg.value to not mistakenly burn the transaction(or may be I do not understand anything at all)
+---
