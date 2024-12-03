@@ -18,3 +18,8 @@ First is the virtual-override declaration to handle the override function from i
 Second is the the declaration of inherited of the declaration in the constructor.
 The overall practice help me to understand how to create new Token with new name and symbol.
 ---
+3.Calculator3.sol
+I practice creating library which can be called by contract 
+and also imported "@openzeppelin/contracts/utils/Strings.sol";
+to convert uint256 to string
+---
