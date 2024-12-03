@@ -45,3 +45,9 @@ A quick practice for me to play around getting input and returns output using "p
 --
 9.WhiteList.sol
 I could not test the msg.sender address with RemixVM yet. To confirm the contract work, I will try to find a way to test.
+--
+10.AllDataType.sol
+I thought this is a simple task to list to data type but it is not.
+I learn many things new about how Solidity works, especially
+about modify and change varaible/storage need to be inside of function. I will keep working on this.
+--
