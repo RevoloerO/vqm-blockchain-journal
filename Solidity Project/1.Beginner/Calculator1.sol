@@ -4,7 +4,7 @@ pragma solidity ^0.8.26;
 /**
     * @title Basic Operator
     * @dev write contract to:
-        -conduct basic operator in programming without consumming gas
+        -conduct calculator to handle basic operator in programming without consumming gas
         *IMPORTANT: To define a function which should not consume any 
         gas and return the response immediatly, we should use view or pure function.
     * @custom:dev-run-script scripts/deploy_with_ethers.ts

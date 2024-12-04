@@ -1,0 +1,15 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "1st project in blockchain world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "vuongquyenmai",
+  "license": "MIT",
+  "dependencies": {
+    "alchemy-sdk": "^3.5.0"
+  }
+}
