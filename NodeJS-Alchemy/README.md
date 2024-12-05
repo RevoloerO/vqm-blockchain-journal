@@ -12,3 +12,7 @@ To test the project, run "npm init" and "npm install alchemy-sdk"
 - Again, need to get API_KEY from Alchemy, put it into the code
 - The price data do not show up as the readable way, so I need to use JSON.stringify(data) to handle and read the JSON.
 ---
+2.BruteForceHashing
+Practice hashing check by using brute force method
+- Required package: (mocha,ethereum-cryptography)
+- To test: run $mocha ./index.js
