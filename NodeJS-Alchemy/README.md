@@ -21,3 +21,9 @@ Practice hashing check by finding color using brute force method
 Practice hashing by encrypt message using keccak256
 - Required package: (mocha,ethereum-cryptography)
 - To test: run $mocha ./hashMessageTest.js
+2.c.signMessage.js
+Practice sign message by using secp256k1 and PRIVATE_KEY
+- Required package: (mocha,ethereum-cryptography)
+- To test: run $mocha ./hashMessageTest.js
+** There is a problem in testing in different platform or
+version of secp256k1 library since sign() function is not regconized
