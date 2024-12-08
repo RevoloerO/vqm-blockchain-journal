@@ -27,3 +27,12 @@ Practice sign message by using secp256k1 and PRIVATE_KEY
 - To test: run $mocha ./hashMessageTest.js
 ** There is a problem in testing in different platform or
 version of secp256k1 library since sign() function is not regconized
+2.d.getAddress.js
+Practice obtain address from publickey by 
+(1) take off 1st byte from public key
+(2) take keccak hash from the rest 
+(3) return toHex of the last 20 bytes from hash
+- Required package: (mocha,ethereum-cryptography)
+- To test: run $mocha ./getAddressTest.js
+** There is also a problem of function getPublicKey from
+ethereum-cryptography/secp256k1 due to environment set up
