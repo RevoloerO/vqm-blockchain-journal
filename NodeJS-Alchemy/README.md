@@ -36,3 +36,15 @@ Practice obtain address from publickey by
 - To test: run $mocha ./getAddressTest.js
 ** There is also a problem of function getPublicKey from
 ethereum-cryptography/secp256k1 due to environment set up
+---
+3.minerPOW.js
+Create miner to find correct block using POW method
+(1) Add transaction to mempool
+(2) Add id with block height to new block
+(3) Pull transaction out of the mempool, then add to new block
+(4) Mining by add nonce and hash until satify condition
+(5) Add found hash to new_block.
+- Required package: (mocha,crypto-js/sha256)
+- To test: run $mocha ./minerPOWTest.js
+***Fortunately, the test work properly.
+
