@@ -9,4 +9,16 @@ contract("VendingMachine", (accounts) =>{
         let balance = await instance.getVendingMachineBalance()
         assert.equal(balance, 100, 'the initial balance should be 100 donuts.')
     })
+
+    it('ensures the balance of vending machine can be updated', async ()=>{
+        await instance.restock(100)
+        let balance = await instance.getVendingMachineBalance()
+        assert.equal(balance, 200, 'the updated balance should be 200 donuts after restocking.')
+    })
+
+    it('allows donuts to be purchased', async () =>{
+        await instance.purchase(1, {from: accounts[0], value: web3.utils.toWei('3','ether')});
+        let balance = await instance.getVendingMachineBalance()
+        assert.equal(balance, 199, 'the  balance should be 199 donuts after purchasing.')
+    })
 })
