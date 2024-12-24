@@ -19,6 +19,7 @@
     "chai": "^5.1.2"
   },
   "dependencies": {
+    "crypto-js": "^4.2.0",
     "ethereum-cryptography": "^3.0.0"
   }
 }
