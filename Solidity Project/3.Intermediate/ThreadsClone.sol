@@ -8,14 +8,36 @@ pragma solidity ^0.8.26;
     */
 
 contract ThreadsClone {
-    mapping( address => string) public threads;
+    uint16 constant THREAD_LENGTH_LIMIT = 256;
 
-
-    function createThreads(string memory _thread) public {
-        threads[msg.sender] = _thread;
+    //Define Thread struct
+    struct Thread{
+        address author;
+        string content;
+        uint timestamp;
+        uint upvotes;
     }
 
-    function getThreads(address _owner) public view returns(string memory){
+    mapping( address => Thread[]) public threads;
+
+    function createThreads(string memory _thread) public {
+        require(bytes(_thread).length <= THREAD_LENGTH_LIMIT, "Too long");
+
+        Thread memory newThread = Thread({
+            author: msg.sender,
+            content: _thread,
+            timestamp: block.timestamp, 
+            upvotes: 0
+        });
+
+        threads[msg.sender].push(newThread) ;
+    }
+
+    function getThread(uint _index) public view returns(Thread memory){
+        return threads[msg.sender][_index];
+    }
+    
+    function getAllThreads(address _owner) public view returns(Thread[] memory) {
         return threads[_owner];
     }
 }
