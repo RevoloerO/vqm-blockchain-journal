@@ -12,6 +12,7 @@ contract ThreadsClone {
 
     //Define Thread struct
     struct Thread{
+        uint256 id;
         address author;
         string content;
         uint timestamp;
@@ -38,6 +39,7 @@ contract ThreadsClone {
         require(bytes(_thread).length <= THREAD_LENGTH_LIMIT, "Too long");
 
         Thread memory newThread = Thread({
+            id: threads[msg.sender].length,
             author: msg.sender,
             content: _thread,
             timestamp: block.timestamp, 
@@ -45,6 +47,17 @@ contract ThreadsClone {
         });
 
         threads[msg.sender].push(newThread) ;
+    }
+
+    function upVote(address _author, uint256 _id) external {
+        require( threads[_author][_id].id == _id, "Nonexist thread ID");
+        threads[_author][_id].upvotes++;
+    }
+
+    function reverseUpVote(address _author, uint256 _id) external {
+        require( threads[_author][_id].id == _id, "Nonexist thread ID");
+        require( threads[_author][_id].upvotes > 0, "No upvote to reversed");
+        threads[_author][_id].upvotes--;
     }
 
     function getThread(uint _index) public view returns(Thread memory){
