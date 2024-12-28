@@ -8,7 +8,7 @@ pragma solidity ^0.8.26;
     */
 
 contract ThreadsClone {
-    uint16 constant THREAD_LENGTH_LIMIT = 256;
+    uint16 public THREAD_LENGTH_LIMIT = 256;
 
     //Define Thread struct
     struct Thread{
@@ -17,8 +17,22 @@ contract ThreadsClone {
         uint timestamp;
         uint upvotes;
     }
+    address public owner;
+
+    constructor(){
+        owner = msg.sender;
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner,"Incorrect Authorization!!");
+        _;
+    }
 
     mapping( address => Thread[]) public threads;
+
+    function setThreadLength(uint16 _newLength) public onlyOwner {
+        THREAD_LENGTH_LIMIT = _newLength;
+    }
 
     function createThreads(string memory _thread) public {
         require(bytes(_thread).length <= THREAD_LENGTH_LIMIT, "Too long");
