@@ -1,0 +1,25 @@
+{
+  "name": "threads-clone",
+  "version": "1.0.0",
+  "description": "Create a Threads Clone running on Ethereum using React, Node for UI and Solidity smart contract for back end",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blockchain",
+    "dapp",
+    "smart",
+    "contract",
+    "threads",
+    "clone",
+    "solidity",
+    "node",
+    "ethereum"
+  ],
+  "author": "vqm",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
