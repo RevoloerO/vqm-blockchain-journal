@@ -19,6 +19,12 @@ contract ThreadsClone {
         uint upvotes;
     }
     address public owner;
+    mapping( address => Thread[]) public threads;
+
+    event ThreadCreated(uint256 id, address author, string content, uint256 timestamp);
+    event ThreadUpvotes(address upvoter, address threadCreator, uint256 threadId, uint256 upvoteCount);
+    event ThreadReversedUpvotes(address reveredUpvoter, address threadCreator, uint256 threadId, uint256 upvoteCount);
+    
 
     constructor(){
         owner = msg.sender;
@@ -29,7 +35,7 @@ contract ThreadsClone {
         _;
     }
 
-    mapping( address => Thread[]) public threads;
+   
 
     function setThreadLength(uint16 _newLength) public onlyOwner {
         THREAD_LENGTH_LIMIT = _newLength;
@@ -47,17 +53,23 @@ contract ThreadsClone {
         });
 
         threads[msg.sender].push(newThread) ;
+
+        emit ThreadCreated(newThread.id, newThread.author, newThread.content, newThread.timestamp);
     }
 
     function upVote(address _author, uint256 _id) external {
         require( threads[_author][_id].id == _id, "Nonexist thread ID");
         threads[_author][_id].upvotes++;
+
+        emit ThreadUpvotes(msg.sender, _author, _id, threads[_author][_id].upvotes);
     }
 
     function reverseUpVote(address _author, uint256 _id) external {
         require( threads[_author][_id].id == _id, "Nonexist thread ID");
         require( threads[_author][_id].upvotes > 0, "No upvote to reversed");
         threads[_author][_id].upvotes--;
+
+        emit ThreadReversedUpvotes(msg.sender, _author, _id, threads[_author][_id].upvotes);
     }
 
     function getThread(uint _index) public view returns(Thread memory){
