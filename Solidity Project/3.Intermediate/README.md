@@ -23,3 +23,7 @@ I practice creating library which can be called by contract
 and also imported "@openzeppelin/contracts/utils/Strings.sol";
 to convert uint256 to string
 ---
+4.HexColorRandomGenerator.sol
+Create Hex Color randomizer for future project making game of color on blockchain.
+Concept using: keccak256, abi.encodedPacked(), block.timestamp
+---
