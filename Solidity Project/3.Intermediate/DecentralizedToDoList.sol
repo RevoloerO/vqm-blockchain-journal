@@ -1,6 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
-
+/* 
+*@title Decentralized To-Do List 
+*@dev This contract allows users to create, manage, and track their to-do tasks in a decentralized manner.
+*@custom:dev-run-script scripts/deploy_with_ethers.ts
+*@author: vqm
+*/
 contract DecentralizedTodoList {
     struct Task {
         uint id;
