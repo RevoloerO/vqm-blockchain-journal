@@ -20,9 +20,10 @@ contract ZombieFactory {
     function _createZombie(string memory _name, uint _dna) private {
         zombies.push(Zombie(_name, _dna));
     }
-    // Add a function to generate a random DNA
+    // Add a function to generate a random DNA using the keccak256 hash function
+    // Then use the modulus operator to ensure the DNA is within the range of 0 to 10^16
     function _generateRandomDna(string memory _str) private view returns (uint) {
-        // start here
+        uint rand = uint(keccak256(abi.encodePacked(_str)));
+        return rand % dnaModulus;
     }
-
 }
